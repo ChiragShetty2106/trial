@@ -1,0 +1,141 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    background: #ff0000;
+
+}
+ul li {
+    display:inline-block;
+    position: relative;
+}
+ul li a{
+    display:block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #ff0000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #ff0000;
+}
+ul li:hover ul.dropdown { 
+    display: block;
+}
+
+html,body{
+    font-family :Roboto,sans-serif,arial;
+    font-size: 16px;
+    color:#242424
+}
+.container{
+    
+    width:1300px;
+    margin:0px auto;
+}
+.main-section{
+    width:100%;
+    float:left;
+    padding:70px 0px 70px 0px; 
+}
+.heading{
+    font-size:28px;
+    font-weight:500;
+    border-bottom:1px solid #46b7c1 ;
+    margin-bottom: 20px;
+    color:#46b7c1;
+}
+.header{
+    background: #46b7c1;
+    padding: 6px;
+}
+.header b{
+    background:#fff;
+    color:red;
+    padding:30px;
+    font-size: 20px;
+}
+.header marquee{
+    font-size: 20px;
+    color:#fff;
+    width: 80%;
+}
+.logo{
+    height:60px;
+}
+
+.slider img{
+    width:100%
+}
+.event {
+    width: 32%;
+    margin-right:1% ;
+    float: left;
+    background-color: #fff;
+    padding: 10px;
+}
+.event.heading{
+ border-bottom: 1px solid #46b7c1 ;
+ padding: 5px; ;
+ color:#fff;
+ background:#46b7c1 ;
+ text-align: center;
+}
+.event ul li{
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+    list-style: none;
+}
+.event-date{
+    background: #46b7c1;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 12px;
+    margin-right: 10px;
+}footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #444;
+    color: #fff;
+    }
+    .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+    header {
+    flex-direction: column;
+    }
+    .logo{
+        margin: 1rem;
+    }
+}
+.cse {
+    background-image: url('cseimg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 750px;
+}
+.cse p,h1,H3,a,li{
+    color: #000000;
+}
